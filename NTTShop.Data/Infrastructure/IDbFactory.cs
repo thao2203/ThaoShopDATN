@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace NTTShop.Data.Infrastructure
 {
-    interface IDbFactory
+    public interface IDbFactory :IDisposable
     {
+        NTTShopDbContext Init();
     }
 }
